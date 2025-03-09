@@ -1,0 +1,30 @@
+.main__intro{
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 2% 10%;
+}
+.main__intro p{
+    width: 45%;
+    margin-left: 35px;
+    border-radius: 10px;
+}
+.main__intro img{
+    top: 0;
+}
+.main__title--blanco{
+    text-align: center;
+}
+.main__edu{
+    margin-top: 0;
+    padding: 2% 10%;
+}
+.main__projects{
+    padding: 2% 10%;
+}
+.main__projects__title h2{
+    text-align: center;
+}
+.main__skills{
+    padding: 2% 10%;
+}

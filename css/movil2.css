@@ -1,0 +1,26 @@
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 10%;
+}
+.nav__title{
+    flex: 100%
+}
+.nav__data a{
+    display: none;
+}
+.main__intro img {
+    top: 17px;
+}
+.nav__data--logo{
+    width: 50px;
+    height: auto
+}
+.nav__data--logo-in{
+    width: 50px;
+    height: auto;
+}
+.main__edu--school{
+    justify-content: space-around;
+}

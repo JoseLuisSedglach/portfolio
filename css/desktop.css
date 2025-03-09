@@ -1,0 +1,43 @@
+.header{
+    height: auto;
+}
+main{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+        "header header"
+        "side main"
+        "side main2";
+}
+.main__intro{
+    grid-area: header;
+    border-bottom: var(--blue) 5px solid;
+    margin-bottom: 0;
+}
+.main__edu{
+    grid-area: main;
+    height: 430px;
+    background-color: var(--white);
+    color: var(--black);
+    border-bottom: var(--blue) 5px solid;
+    align-self: flex-start;
+}
+.main__edu .main__title--blanco{
+    color: var(--black);
+}
+.main__projects{
+    grid-area: main2;
+    height: 510px;
+}
+.main__projects-bullets--hide{
+    height: auto;
+}
+.main__skills{
+    grid-area: side;
+    height: 100%;
+    margin: 0;
+}
+.main__skills--list{
+    flex-wrap: nowrap;
+    flex-direction: column;
+}

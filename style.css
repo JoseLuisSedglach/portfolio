@@ -1,0 +1,336 @@
+:root{
+    /*Colores*/
+    --blue: #1F7999;
+    --black: #000000;
+    --black-80: #2B2D2D;
+    --white: #FFFFFF;
+    --gray-font: #808080;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Lexend", serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+    min-width: 360px;
+    height: auto;
+}
+.header__logo{
+    width: 80px;
+    height: auto;
+}
+.header__title{
+    font-size: 2.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.header hr{
+    border: none;
+    height: 5px;
+    background-color: var(--blue);
+    width: 100%;
+    position: absolute;
+	top: 80px;
+    padding: 0;
+}
+.nav{
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
+}
+.nav__title{
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.nav__data{
+    margin: 15px 0 15px 0;
+    display: flex;
+    align-items: center;
+}
+.nav__data--logo{
+    width: 22px;
+    height: 22px;
+}
+.nav__data--logo-in{
+    width: 22px;
+    height: 22px;
+}
+.nav__data a{
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-left: 5px;
+    text-decoration: none;
+}
+main{
+    width: 100%;
+    max-width: 1200px;
+    min-width: 360px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px;
+}
+.main__intro{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__intro img{
+    width: 280px;
+    height: auto;
+    aspect-ratio: 5/6;
+    border-radius: 14px;
+    position: relative;
+    top: 7px;
+}
+.main__intro p{
+    text-align: center;
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 500;
+    background-color: var(--blue);
+    padding: 16px;
+}
+.main__edu{
+    width: 100%;
+    height: auto;
+    margin-top: 35px;
+    background-color: var(--black-80);
+    padding: 10px;
+    color: var(--white);
+}
+.main__title--blanco{
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-bottom: 14px;
+    color: var(--white);
+}
+.main__edu p{
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+}
+.main__edu--school{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.main__edu--school-column1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+}
+.main__edu--school-column1 p{
+    font-size: 2rem;
+    padding-top: 15px;
+    text-align: center;
+}
+.school__logo{
+    width: 83px;
+    height: auto;
+    fill: var(--gray-font);
+}
+.main__edu--school-column2{
+    display: flex;
+    flex-direction: column;
+
+}
+.main__edu--school-column2 p{
+    font-size: 1.8rem;
+}
+.main__edu--school-column2 p:nth-child(3){
+    margin-top: 20px;
+}
+.progress--bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--gray-font);
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+.main__edu--progress-bar-credits{
+    height: 100%;
+    background-color: var(--blue);
+    width: 100%;
+}
+.main__edu--progress-bar-ss{
+    height: 100%;
+    background-color: var(--blue);
+    width: 100%;
+}
+.main__edu--courses{
+    padding-top: 20px;
+}
+.main__edu--courses h3{
+    font-size: 2rem;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: 2px;
+}
+.main__edu--courses p{
+    padding: 10px;
+    text-indent: -16px;
+    margin-left: 10px;
+}
+.bullet--text::before {
+    content: "•";
+    font-size: 1.4rem;
+    margin-right: 8px;
+    color: var(--white);
+}
+.main__projects{
+    width: 100%;
+    height: auto;
+    margin: 8px 0;
+    padding: 10px;
+    color: var(--black);
+}
+.main__projects__title h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-bottom: 14px;
+}
+.main__projects__title hr{
+    border: none;
+    height: 5px;
+    background-color: var(--black);
+    width: 100%;
+}
+.main__projects-curp{
+    margin: 20px 0;
+}
+.main__projects h3{
+    font-family: "Bebas Neue", serif;
+    font-size: 2rem;
+    text-wrap: wrap;
+    width: 50%;
+}
+.main__projects-curp-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.arrow-open{
+    width: 13px;
+    height: 8px;
+    margin: 10px;
+    stroke: var(--blue);
+    stroke-width: 7px;
+    fill: none;
+    transition: transform 0.3s ease-in-out;
+}
+.arrow-close{
+    width: 13px;
+    height: 8px;
+    margin: 10px;
+    stroke: var(--gray-font);
+    stroke-width: 7px;
+    fill: none;
+    transform: scaleY(-1);
+}
+
+.main__projects-curp-title .school__logo{
+    margin-top: 0;
+    width: 60px;
+}
+.main__projects-bullets--hide{
+    margin: 10px;
+    width: 100%;
+    font-size: 1.4rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    padding: 0 16px;
+}
+.main__projects-bullets--show{
+    max-height: 500px;
+    padding: 0 16px;
+}
+
+.main__projects-resume{
+    margin: 20px 0;
+}
+.main__projects-resume-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main__projects-resume-title .header__logo{
+    margin-top: 0;
+    width: 60px;
+}
+.main__skills{
+    width: 100%;
+    height: 400px;
+    margin: 8px 0;
+    background-color: var(--black-80);
+    padding: 10px;
+}
+.main__skills{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    background-color: var(--black-80);
+    padding: 10px;
+    color: var(--white);
+}
+.main__skills--list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main__skills--group{
+    font-family: "Bebas Neue", serif;
+    font-size: 2rem;
+    text-wrap: wrap;
+    color: var(--white);
+    margin: 19px 10px;
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress--bar-skills{
+    width: 100%;
+    height: 10px;
+    background-color: var(--gray-font);
+    border-radius: 2px;
+    overflow: hidden;
+}
+.progress--bar-skills div {
+    height: 100%;
+    background-color: var(--blue);
+}
+.main__skills--progress-bar-html{width: 70%;}
+.main__skills--progress-bar-javascript{width: 40%;}
+.main__skills--progress-bar-python{width: 30%;}
+.main__skills--progress-bar-php{width: 50%;}
+.main__skills--progress-bar-sql{width: 50%;}
+.main__skills--progress-bar-java{width: 30%;}
+.main__skills--progress-bar-bash{width: 30%;}
+.main__skills--progress-bar-c{width: 30%;}
+.main__skills--progress-bar-photo{width: 50%;}
+.main__skills--progress-bar-illustrator{width: 70%;}
+.main__skills--progress-bar-indesign{width: 60%;}
+.main__skills--progress-bar-english{width: 60%;}
